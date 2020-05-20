@@ -14,3 +14,12 @@ def lcm(x,y):
 x = int(input('x = '))
 y = int(input('y = '))
 print('the minimal of them is %d, the least common multiple is %d' % (gcd(x,y), lcm(x,y)))
+
+def is_prime(x):
+    for factor in range(2,x):
+        if x % factor == 0:
+            return False
+    return True if x != 1 else False
+
+a = int(input('please insert a number a = '))
+print('the number is prime? ', is_prime(a))
